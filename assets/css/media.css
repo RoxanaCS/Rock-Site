@@ -1,27 +1,46 @@
-@media (min-width:400px) and (max-width:824px){ /*primero siempre colacamos el mínimo*/
+@media (min-width:400px) and (max-width:800px){ /*primero siempre colacamos el mínimo*/
   [class*='col-']{ /*para que las columnas ocupen el 100% del ancho cuando llega a cierto tamaño, para acceder a todas las clases*/
     width: 100%;
   }
-  body{
-    background-color: red;
-    color: white;
+  header{
+    height: 4em;
   }
-  .img{
-    border: 6px solid white;
-    content: url(../img/plaza_de_armas_medias.jpg);   /*esta es la forma de cambias el contenido de una imagen por otra*/
+  .indiceNav{
+    font-size: 1em;
   }
-}
-@media (min-width:200px) and (max-width:399px){
-  [class*='col-']{ /*para que las columnas ocupen el 100% del ancho cuando llega a cierto tamaño, para acceder a todas las clases*/
-    width: 100%;
+  nav .fa-bars{
+    color: #7D7D7F;
+    font-size: 2em;
+    border: 1px solid #7D7D7F;
+    border-radius: 0.1em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    display: block;
   }
-  body{
-    background-color: green;
-    color: #DFDFDF;
+  .hero{
+    height: 45em;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    color: #FFF;
+    -webkit-filter: brightness(50%);
   }
-  .img{
-    display: none;
+  .title{
+    font-size: 6em;
+    width: 4em;
+    text-align: center;
+    margin-top: 0;
   }
-}
-
-}
+  .subtitle{
+    text-align: center;
+    font-size: 3em;
+    width: 8em;
+  }
+  img{
+    border-radius:20em;
+    width: 20em;
+  }
+  .contentTitle, .contentTitleCenter{
+    width: 5em;
+  }
+  .cotentParagraph, .cotentParagraphCenter{
+    width: 13em;
+  }
