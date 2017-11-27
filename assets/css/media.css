@@ -1,0 +1,27 @@
+@media (min-width:400px) and (max-width:824px){ /*primero siempre colacamos el mínimo*/
+  [class*='col-']{ /*para que las columnas ocupen el 100% del ancho cuando llega a cierto tamaño, para acceder a todas las clases*/
+    width: 100%;
+  }
+  body{
+    background-color: red;
+    color: white;
+  }
+  .img{
+    border: 6px solid white;
+    content: url(../img/plaza_de_armas_medias.jpg);   /*esta es la forma de cambias el contenido de una imagen por otra*/
+  }
+}
+@media (min-width:200px) and (max-width:399px){
+  [class*='col-']{ /*para que las columnas ocupen el 100% del ancho cuando llega a cierto tamaño, para acceder a todas las clases*/
+    width: 100%;
+  }
+  body{
+    background-color: green;
+    color: #DFDFDF;
+  }
+  .img{
+    display: none;
+  }
+}
+
+}
